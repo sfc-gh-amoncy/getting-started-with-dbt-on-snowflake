@@ -1,0 +1,19 @@
+tasty_bytes:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: am_ps_demo
+      schema: dbt_projects
+      warehouse: compute_wh
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: am_ps_demo
+      schema: dbt_projects
+      warehouse: compute_wh
