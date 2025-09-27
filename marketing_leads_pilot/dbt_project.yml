@@ -1,8 +1,8 @@
 ## Project
-name: tasty_bytes
+name: marketing_leads_pilot
 version: "1.0"
 config-version: 2
-profile: tasty_bytes
+profile: marketing_leads_pilot
 
 ## Sources
 model-paths: [models]
