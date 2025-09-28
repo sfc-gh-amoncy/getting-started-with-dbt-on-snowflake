@@ -3,4 +3,4 @@ SELECT
     f.LEAD_SOURCE,
     f.CREATED_DATE,
     f.IS_QUALIFIED
-FROM {{ ref('int_fact_leads') }} AS f;
+FROM {{ ref('int_fact_leads') }} AS f

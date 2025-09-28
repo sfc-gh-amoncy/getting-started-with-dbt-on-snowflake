@@ -24,7 +24,7 @@ SELECT
     LEAD_SOURCE,
     STATUS,
     CREATED_AT
-FROM raw_data;
+FROM raw_data
         );
       
   

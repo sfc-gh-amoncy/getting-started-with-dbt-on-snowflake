@@ -1,4 +1,10 @@
-SELECT
+
+  
+    
+
+        create or replace transient table am_ps_demo.dbt_projects.int_fact_leads
+         as
+        (SELECT
     rl.LEAD_ID,
     ls.LEAD_SOURCE AS LEAD_SOURCE,
     DATE(rl.CREATED_AT) AS CREATED_DATE,
@@ -6,3 +12,6 @@ SELECT
 FROM am_ps_demo.dbt_projects.stg_marketing_leads AS rl
 LEFT JOIN am_ps_demo.dbt_projects.int_dim_lead_source AS ls
   ON rl.LEAD_SOURCE = ls.LEAD_SOURCE
+        );
+      
+  
