@@ -1,4 +1,5 @@
--- This model selects from the seeded raw data table.
+{{ config(materialized='table') }}
+
 SELECT
     LEAD_ID,
     LEAD_SOURCE,

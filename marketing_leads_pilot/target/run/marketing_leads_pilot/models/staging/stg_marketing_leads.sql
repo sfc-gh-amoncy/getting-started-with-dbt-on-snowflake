@@ -1,4 +1,16 @@
-INSERT INTO  am_ps_demo.dbt_projects.MARKETING_LEADS_RAW (
+
+  
+    
+
+        create or replace transient table am_ps_demo.dbt_projects.stg_marketing_leads
+         as
+        (-- This model will execute the macro to insert raw data.
+-- IMPORTANT: This will cause data duplication on every run.
+-- Also, it will fail if the MARKETING_LEADS_RAW table doesn't already exist.
+
+
+
+INSERT INTO MARKETING_LEADS_RAW (
     LEAD_ID, LEAD_SOURCE, STATUS, CREATED_AT
 ) VALUES
 ('L001', 'Website Form', 'New', '2025-09-01 08:00:00'),
@@ -11,3 +23,16 @@ INSERT INTO  am_ps_demo.dbt_projects.MARKETING_LEADS_RAW (
 ('L008', 'Paid Ad', 'New', '2025-09-08 20:00:00'),
 ('L009', 'Website Form', 'New', '2025-09-09 21:30:00'),
 ('L010', 'Paid Ad', 'Contacted', '2025-09-10 22:45:00');
+
+
+
+-- The SELECT statement then transforms this data.
+SELECT
+    LEAD_ID,
+    LEAD_SOURCE,
+    STATUS,
+    CREATED_AT
+FROM MARKETING_LEADS_RAW;
+        );
+      
+  

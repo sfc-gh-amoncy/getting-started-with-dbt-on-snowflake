@@ -1,0 +1,17 @@
+{% macro insert_raw_data() %}
+
+INSERT INTO MARKETING_LEADS_RAW (
+    LEAD_ID, LEAD_SOURCE, STATUS, CREATED_AT
+) VALUES
+('L001', 'Website Form', 'New', '2025-09-01 08:00:00'),
+('L002', 'Paid Ad', 'Contacted', '2025-09-02 09:30:00'),
+('L003', 'Referral', 'Qualified', '2025-09-03 11:00:00'),
+('L004', 'Website Form', 'New', '2025-09-04 13:45:00'),
+('L005', 'Paid Ad', 'New', '2025-09-05 15:00:00'),
+('L006', 'Website Form', 'Contacted', '2025-09-06 16:10:00'),
+('L007', 'Referral', 'Qualified', '2025-09-07 18:20:00'),
+('L008', 'Paid Ad', 'New', '2025-09-08 20:00:00'),
+('L009', 'Website Form', 'New', '2025-09-09 21:30:00'),
+('L010', 'Paid Ad', 'Contacted', '2025-09-10 22:45:00');
+
+{% endmacro %}

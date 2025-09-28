@@ -1,1 +1,1 @@
-{"_invocation_id": "31b3d72e-f32a-4dc5-898a-44edc75e1656", "linked": {}}
+{"_invocation_id": "ad33dded-88f4-43d7-a402-90869d15aa88", "linked": {"0": {"name": "model.marketing_leads_pilot.int_fact_leads", "type": "model", "succ": [3]}, "1": {"name": "model.marketing_leads_pilot.stg_marketing_leads", "type": "model", "succ": [0, 2]}, "2": {"name": "model.marketing_leads_pilot.int_dim_lead_source", "type": "model", "succ": [0]}, "3": {"name": "model.marketing_leads_pilot.mkt_leads_bus", "type": "model"}}}
