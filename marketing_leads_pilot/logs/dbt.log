@@ -1,0 +1,168 @@
+
+
+============================== 22:39:29.224121 | c69bb449-6218-4bb9-a3d0-3d4ff8aba0dd ==============================
+[0m22:39:29.224121 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m22:39:29.225198 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': '/tmp/dbt/target/', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m22:39:29.596916 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m22:39:30.376243 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m22:39:30.378532 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 1.248897, "process_in_blocks": "0", "process_kernel_time": 0.99, "process_mem_max_rss": "394408", "process_out_blocks": "0", "process_user_time": 4.31}
+[0m22:39:30.379348 [debug] [Dummy-1   ]: Command `cli compile` failed at 22:39:30.379042 after 1.25 seconds
+[0m22:39:30.380090 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 22:41:39.605545 | a255a7bd-b88b-4268-a3d8-546913c9c858 ==============================
+[0m22:41:39.605545 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m22:41:39.606625 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m22:41:39.982870 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m22:41:40.692829 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m22:41:40.695079 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 1.1847763, "process_in_blocks": "0", "process_kernel_time": 1.03, "process_mem_max_rss": "401564", "process_out_blocks": "0", "process_user_time": 4.3}
+[0m22:41:40.696094 [debug] [Dummy-1   ]: Command `cli compile` failed at 22:41:40.695753 after 1.19 seconds
+[0m22:41:40.696832 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 22:44:14.903405 | 91a4a0bb-19b5-4c49-be58-5443e4d846bf ==============================
+[0m22:44:14.903405 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m22:44:14.904543 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m22:44:15.148086 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-aybjtca1'
+[0m22:44:15.149021 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:44:15.175389 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:44:15.176435 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:44:15.200625 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:44:15.220794 [info ] [Dummy-1   ]: Updating lock file in file path: /tmp/dbt/package-lock.yml
+[0m22:44:15.223235 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-oi3btjm4'
+[0m22:44:15.228672 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m22:44:15.405640 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m22:44:15.406276 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m22:44:15.406862 [info ] [Dummy-1   ]: 
+[0m22:44:15.407388 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m22:44:15.409551 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.60393333, "process_in_blocks": "0", "process_kernel_time": 0.84, "process_mem_max_rss": "397988", "process_out_blocks": "0", "process_user_time": 3.84}
+[0m22:44:15.410281 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 22:44:15.409997 after 0.61 seconds
+[0m22:44:15.410831 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 22:45:27.252657 | 5a1ee399-8538-42b2-b509-03d7428beb49 ==============================
+[0m22:45:27.252657 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m22:45:27.253786 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m22:45:27.510815 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-52efyc83'
+[0m22:45:27.511562 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:45:27.536512 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:45:27.537586 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:45:27.560079 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:45:27.568892 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m22:45:27.755121 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m22:45:27.755881 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m22:45:27.756493 [info ] [Dummy-1   ]: 
+[0m22:45:27.757024 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m22:45:27.759151 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.60416853, "process_in_blocks": "0", "process_kernel_time": 0.91, "process_mem_max_rss": "390132", "process_out_blocks": "0", "process_user_time": 3.91}
+[0m22:45:27.759889 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 22:45:27.759585 after 0.61 seconds
+[0m22:45:27.760448 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 22:47:39.801721 | 56105057-81b5-4af4-a132-9167ebb3fed8 ==============================
+[0m22:47:39.801721 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m22:47:39.802834 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m22:47:40.055081 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-_cwf1bna'
+[0m22:47:40.055940 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:47:40.081443 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:47:40.082485 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:47:40.103772 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:47:40.112560 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m22:47:40.283276 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m22:47:40.283931 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m22:47:40.284534 [info ] [Dummy-1   ]: 
+[0m22:47:40.285065 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m22:47:40.287290 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.5808136, "process_in_blocks": "0", "process_kernel_time": 0.77, "process_mem_max_rss": "396912", "process_out_blocks": "0", "process_user_time": 4.05}
+[0m22:47:40.288030 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 22:47:40.287738 after 0.58 seconds
+[0m22:47:40.288590 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:31:19.684265 | 0b4d7565-c5f6-45f1-be39-aab000b892dd ==============================
+[0m03:31:19.684265 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:31:19.685287 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m03:31:19.930615 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-rudy9wa5'
+[0m03:31:19.931302 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m03:31:19.954840 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m03:31:19.955716 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m03:31:19.977969 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m03:31:19.985732 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m03:31:20.171017 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m03:31:20.171604 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m03:31:20.172160 [info ] [Dummy-1   ]: 
+[0m03:31:20.172659 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m03:31:20.174635 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.58291215, "process_in_blocks": "0", "process_kernel_time": 0.96, "process_mem_max_rss": "392528", "process_out_blocks": "0", "process_user_time": 3.76}
+[0m03:31:20.175307 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 03:31:20.175040 after 0.58 seconds
+[0m03:31:20.175829 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:36:51.712225 | f1816889-486b-43d4-b8da-4b0333af146c ==============================
+[0m03:36:51.712225 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:36:51.713321 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m03:36:51.963167 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-buf39v2r'
+[0m03:36:51.963886 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m03:36:51.989536 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m03:36:51.990600 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m03:36:52.012249 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m03:36:52.020814 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m03:36:52.191540 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m03:36:52.192175 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m03:36:52.192759 [info ] [Dummy-1   ]: 
+[0m03:36:52.193284 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m03:36:52.195401 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.5782582, "process_in_blocks": "0", "process_kernel_time": 0.62, "process_mem_max_rss": "389728", "process_out_blocks": "0", "process_user_time": 4.21}
+[0m03:36:52.196111 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 03:36:52.195832 after 0.58 seconds
+[0m03:36:52.196660 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:38:57.218511 | 7bcc47fa-3e00-403f-a8da-397ff73ef63b ==============================
+[0m03:38:57.218511 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:38:57.219616 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m03:38:57.591281 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:38:58.288486 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:38:58.290089 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:38:59.760070 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.tasty_bytes.staging
+- models.tasty_bytes.marts
+[0m03:38:59.829528 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:38:59.831983 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:38:59.872500 [info ] [Dummy-1   ]: Found 590 macros
+[0m03:38:59.874573 [warn ] [Dummy-1   ]: Nothing to do. Try checking your model configs and model specification args
+[0m03:38:59.875436 [debug] [Dummy-1   ]: Command end result
+[0m03:38:59.909738 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:38:59.912261 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:38:59.916395 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:38:59.918377 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 2.794964, "process_in_blocks": "0", "process_kernel_time": 1.26, "process_mem_max_rss": "412724", "process_out_blocks": "0", "process_user_time": 5.7}
+[0m03:38:59.919144 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 03:38:59.918861 after 2.80 seconds
+[0m03:38:59.919774 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:40:44.096919 | 31b3d72e-f32a-4dc5-898a-44edc75e1656 ==============================
+[0m03:40:44.096919 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:40:44.098116 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m03:40:44.472780 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:40:45.260423 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:40:45.461358 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:40:45.462022 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:40:45.463270 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.tasty_bytes.staging
+- models.tasty_bytes.marts
+[0m03:40:45.644190 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:40:45.647096 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:40:45.701691 [info ] [Dummy-1   ]: Found 590 macros
+[0m03:40:45.703885 [warn ] [Dummy-1   ]: Nothing to do. Try checking your model configs and model specification args
+[0m03:40:45.706465 [debug] [Dummy-1   ]: Command end result
+[0m03:40:45.741962 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:40:45.744592 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:40:45.749028 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:40:45.751076 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.7484913, "process_in_blocks": "0", "process_kernel_time": 1.19, "process_mem_max_rss": "411132", "process_out_blocks": "0", "process_user_time": 4.74}
+[0m03:40:45.751787 [debug] [Dummy-1   ]: Command `cli run` succeeded at 03:40:45.751510 after 1.75 seconds
+[0m03:40:45.752391 [debug] [Dummy-1   ]: Flushing usage events
