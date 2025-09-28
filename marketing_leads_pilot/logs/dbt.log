@@ -495,3 +495,319 @@ syntax error line 11 at position 2 unexpected 'VALUES'.
 [0m04:57:02.562838 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.715461, "process_in_blocks": "0", "process_kernel_time": 1.03, "process_mem_max_rss": "432560", "process_out_blocks": "0", "process_user_time": 5.51}
 [0m04:57:02.563529 [debug] [Dummy-1   ]: Command `cli run` failed at 04:57:02.563259 after 3.72 seconds
 [0m04:57:02.564097 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:06:13.497754 | 1af6ddcf-a5bd-4315-a863-3f45e74a1a90 ==============================
+[0m05:06:13.497754 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:06:13.498826 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m05:06:13.747988 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-qdu3lpde'
+[0m05:06:13.748734 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m05:06:13.773054 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m05:06:13.774066 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m05:06:13.795859 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m05:06:13.802170 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m05:06:13.984668 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m05:06:13.985305 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m05:06:13.985873 [info ] [Dummy-1   ]: 
+[0m05:06:13.986377 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m05:06:13.988459 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.58522815, "process_in_blocks": "0", "process_kernel_time": 0.79, "process_mem_max_rss": "392484", "process_out_blocks": "0", "process_user_time": 3.95}
+[0m05:06:13.989211 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 05:06:13.988927 after 0.59 seconds
+[0m05:06:13.989749 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:06:43.673371 | c6a9337b-35b6-4817-915c-61e04adc671b ==============================
+[0m05:06:43.673371 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:06:43.674569 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': '/tmp/dbt/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m05:06:44.045008 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m05:06:44.818333 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m05:06:45.046649 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m05:06:45.047616 [debug] [Dummy-1   ]: Partial parsing: updated file: marketing_leads_pilot://models/staging/stg_marketing_leads.sql
+[0m05:06:45.494020 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.marketing_leads_pilot.stg_marketing_leads' (models/staging/stg_marketing_leads.sql) depends on a node named 'marketing_leads_raw' which was not found
+[0m05:06:45.496354 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 1.9184602, "process_in_blocks": "0", "process_kernel_time": 1.12, "process_mem_max_rss": "459040", "process_out_blocks": "0", "process_user_time": 4.92}
+[0m05:06:45.497177 [debug] [Dummy-1   ]: Command `cli compile` failed at 05:06:45.496877 after 1.92 seconds
+[0m05:06:45.497866 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:09:51.365988 | 1e9d42e6-65b8-441a-a5ba-4eae67035246 ==============================
+[0m05:09:51.365988 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:09:51.367150 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/tmp/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m05:09:51.763506 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m05:09:52.507087 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m05:09:52.753662 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m05:09:52.754873 [debug] [Dummy-1   ]: Partial parsing: updated file: marketing_leads_pilot://models/staging/stg_marketing_leads.sql
+[0m05:09:53.243338 [error] [Dummy-1   ]: Encountered an error:
+Compilation Error
+  Model 'model.marketing_leads_pilot.stg_marketing_leads' (models/staging/stg_marketing_leads.sql) depends on a node named 'marketing_leads_raw' which was not found
+[0m05:09:53.245909 [debug] [Dummy-1   ]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 1.9792733, "process_in_blocks": "0", "process_kernel_time": 1.12, "process_mem_max_rss": "458268", "process_out_blocks": "0", "process_user_time": 5.37}
+[0m05:09:53.246760 [debug] [Dummy-1   ]: Command `cli seed` failed at 05:09:53.246453 after 1.98 seconds
+[0m05:09:53.247540 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:12:22.303408 | f118e4f7-6053-4fae-9fa3-a01f357479aa ==============================
+[0m05:12:22.303408 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:12:22.304679 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m05:12:22.561827 [debug] [Dummy-1   ]: Set downloads directory='/tmp/dbt-downloads-7rm89hxf'
+[0m05:12:22.562549 [debug] [Dummy-1   ]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m05:12:22.607394 [debug] [Dummy-1   ]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m05:12:22.608466 [debug] [Dummy-1   ]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m05:12:22.632471 [debug] [Dummy-1   ]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m05:12:22.638930 [info ] [Dummy-1   ]: Installing dbt-labs/dbt_utils
+[0m05:12:22.825214 [info ] [Dummy-1   ]: Installed from version 1.3.0
+[0m05:12:22.825838 [info ] [Dummy-1   ]: Updated version available: 1.3.1
+[0m05:12:22.826430 [info ] [Dummy-1   ]: 
+[0m05:12:22.826953 [info ] [Dummy-1   ]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m05:12:22.829174 [debug] [Dummy-1   ]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.623699, "process_in_blocks": "0", "process_kernel_time": 0.78, "process_mem_max_rss": "398304", "process_out_blocks": "0", "process_user_time": 4.08}
+[0m05:12:22.829910 [debug] [Dummy-1   ]: Command `cli deps` succeeded at 05:12:22.829622 after 0.62 seconds
+[0m05:12:22.830470 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:13:08.156007 | 890d782e-fd10-42e9-ad3e-de895e2d828c ==============================
+[0m05:13:08.156007 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:13:08.157162 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'warn_error': 'None', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt ', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': '/tmp/dbt/target/', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m05:13:08.539677 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m05:13:09.307356 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m05:13:09.542181 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m05:13:09.543193 [debug] [Dummy-1   ]: Partial parsing: updated file: marketing_leads_pilot://models/staging/stg_marketing_leads.sql
+[0m05:13:10.196403 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m05:13:10.199058 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m05:13:10.241481 [info ] [Dummy-1   ]: Found 4 models, 591 macros
+[0m05:13:10.244066 [info ] [Dummy-1   ]: 
+[0m05:13:10.244809 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m05:13:10.245318 [info ] [Dummy-1   ]: 
+[0m05:13:10.246175 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m05:13:10.253884 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_am_ps_demo_dbt_projects'
+[0m05:13:10.399294 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:13:10.399963 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m05:13:10.400497 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:13:10.918807 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.518 seconds
+[0m05:13:10.924900 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:13:10.925598 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+show objects in am_ps_demo.dbt_projects
+    limit 10000
+    
+;
+[0m05:13:11.008920 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.083 seconds
+[0m05:13:11.011524 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:13:11.012135 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m05:13:11.057992 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.045 seconds
+[0m05:13:11.066075 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:11.066940 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_am_ps_demo_dbt_projects, now model.marketing_leads_pilot.stg_marketing_leads)
+[0m05:13:11.067625 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:11.080214 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.stg_marketing_leads"
+[0m05:13:11.081264 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:11.082359 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:11.083715 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:13:11.084711 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.marketing_leads_pilot.stg_marketing_leads, now model.marketing_leads_pilot.int_dim_lead_source)
+[0m05:13:11.085333 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:13:11.092914 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.int_dim_lead_source"
+[0m05:13:11.093798 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:13:11.094904 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:13:11.096064 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.int_fact_leads
+[0m05:13:11.096968 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.marketing_leads_pilot.int_dim_lead_source, now model.marketing_leads_pilot.int_fact_leads)
+[0m05:13:11.097542 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.int_fact_leads
+[0m05:13:11.104406 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.int_fact_leads"
+[0m05:13:11.105367 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.int_fact_leads
+[0m05:13:11.106413 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.int_fact_leads
+[0m05:13:11.107703 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:13:11.108686 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.marketing_leads_pilot.int_fact_leads, now model.marketing_leads_pilot.mkt_leads_bus)
+[0m05:13:11.109286 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:13:11.115857 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.mkt_leads_bus"
+[0m05:13:11.116774 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:13:11.117801 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:13:11.119767 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m05:13:11.120304 [debug] [Dummy-1   ]: Connection 'model.marketing_leads_pilot.mkt_leads_bus' was properly closed.
+[0m05:13:11.121778 [debug] [Dummy-1   ]: Command end result
+[0m05:13:11.159468 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m05:13:11.161918 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m05:13:11.171254 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m05:13:11.173321 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 3.1150692, "process_in_blocks": "0", "process_kernel_time": 1.14, "process_mem_max_rss": "489712", "process_out_blocks": "0", "process_user_time": 5.81}
+[0m05:13:11.174176 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 05:13:11.173884 after 3.12 seconds
+[0m05:13:11.174946 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:13:34.281547 | 0076bc6a-8502-41be-ac94-c1c013bb2c3a ==============================
+[0m05:13:34.281547 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:13:34.282788 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': '/tmp/dbt/target/', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m05:13:34.675471 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m05:13:35.418563 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m05:13:35.679198 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:13:35.679879 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:13:35.929062 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m05:13:35.931943 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m05:13:35.989042 [info ] [Dummy-1   ]: Found 4 models, 591 macros
+[0m05:13:35.991948 [info ] [Dummy-1   ]: 
+[0m05:13:35.992782 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m05:13:35.993351 [info ] [Dummy-1   ]: 
+[0m05:13:35.994491 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m05:13:36.002392 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_am_ps_demo'
+[0m05:13:36.148813 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo"
+[0m05:13:36.149546 [debug] [ThreadPool]: On list_am_ps_demo: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo"} */
+show terse schemas in database am_ps_demo
+    limit 10000
+[0m05:13:36.150121 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:13:36.579611 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 0.429 seconds
+[0m05:13:36.584597 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_am_ps_demo_dbt_projects'
+[0m05:13:36.603369 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:13:36.604107 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m05:13:36.604838 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:13:37.068259 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.463 seconds
+[0m05:13:37.074275 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:13:37.075371 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+show objects in am_ps_demo.dbt_projects
+    limit 10000
+    
+;
+[0m05:13:37.136590 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.060 seconds
+[0m05:13:37.139126 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:13:37.139792 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m05:13:37.216713 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.076 seconds
+[0m05:13:37.224902 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:37.225939 [info ] [Thread-2 (]: 1 of 4 START sql table model dbt_projects.stg_marketing_leads .................. [RUN]
+[0m05:13:37.226832 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_am_ps_demo_dbt_projects, now model.marketing_leads_pilot.stg_marketing_leads)
+[0m05:13:37.227478 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:37.240045 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.stg_marketing_leads"
+[0m05:13:37.241091 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:37.290466 [debug] [Thread-2 (]: Writing runtime sql for node "model.marketing_leads_pilot.stg_marketing_leads"
+[0m05:13:37.292793 [debug] [Thread-2 (]: Using snowflake connection "model.marketing_leads_pilot.stg_marketing_leads"
+[0m05:13:37.293675 [debug] [Thread-2 (]: On model.marketing_leads_pilot.stg_marketing_leads: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "node_id": "model.marketing_leads_pilot.stg_marketing_leads"} */
+create or replace transient table am_ps_demo.dbt_projects.stg_marketing_leads
+         as
+        (
+
+WITH raw_data AS (
+    SELECT 'L001' AS LEAD_ID, 'Website Form' AS LEAD_SOURCE, 'New' AS STATUS, '2025-09-01 08:00:00'::timestamp AS CREATED_AT
+    UNION ALL SELECT 'L002', 'Paid Ad', 'Contacted', '2025-09-02 09:30:00'::timestamp
+    UNION ALL SELECT 'L003', 'Referral', 'Qualified', '2025-09-03 11:00:00'::timestamp
+    UNION ALL SELECT 'L004', 'Website Form', 'New', '2025-09-04 13:45:00'::timestamp
+    UNION ALL SELECT 'L005', 'Paid Ad', 'New', '2025-09-05 15:00:00'::timestamp
+    UNION ALL SELECT 'L006', 'Website Form', 'Contacted', '2025-09-06 16:10:00'::timestamp
+    UNION ALL SELECT 'L007', 'Referral', 'Qualified', '2025-09-07 18:20:00'::timestamp
+    UNION ALL SELECT 'L008', 'Paid Ad', 'New', '2025-09-08 20:00:00'::timestamp
+    UNION ALL SELECT 'L009', 'Website Form', 'New', '2025-09-09 21:30:00'::timestamp
+    UNION ALL SELECT 'L010', 'Paid Ad', 'Contacted', '2025-09-10 22:45:00'::timestamp
+)
+-- This SELECT statement is what dbt will use to build your staging table.
+SELECT
+    LEAD_ID,
+    LEAD_SOURCE,
+    STATUS,
+    CREATED_AT
+FROM raw_data;
+[0m05:13:37.294442 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m05:13:37.756312 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01bf5a3d-0306-8b37-0004-ffeb0141ee32
+[0m05:13:37.757190 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 23 at position 13 unexpected ';'.
+[0m05:13:37.762895 [debug] [Thread-2 (]: Database Error in model stg_marketing_leads (models/staging/stg_marketing_leads.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 13 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/marketing_leads_pilot/models/staging/stg_marketing_leads.sql
+[0m05:13:37.766896 [error] [Thread-2 (]: 1 of 4 ERROR creating sql table model dbt_projects.stg_marketing_leads ......... [[31mERROR[0m in 0.54s]
+[0m05:13:37.767926 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:13:37.768926 [debug] [Thread-5 (]: Marking all children of 'model.marketing_leads_pilot.stg_marketing_leads' to be skipped because of status 'error'.  Reason: Database Error in model stg_marketing_leads (models/staging/stg_marketing_leads.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 13 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/marketing_leads_pilot/models/staging/stg_marketing_leads.sql.
+[0m05:13:37.771314 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:13:37.772237 [info ] [Thread-2 (]: 2 of 4 SKIP relation dbt_projects.int_dim_lead_source .......................... [[33mSKIP[0m]
+[0m05:13:37.772999 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:13:37.774152 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.int_fact_leads
+[0m05:13:37.775111 [info ] [Thread-2 (]: 3 of 4 SKIP relation dbt_projects.int_fact_leads ............................... [[33mSKIP[0m]
+[0m05:13:37.775822 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.int_fact_leads
+[0m05:13:37.777195 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:13:37.778059 [info ] [Thread-2 (]: 4 of 4 SKIP relation dbt_projects.mkt_leads_bus ................................ [[33mSKIP[0m]
+[0m05:13:37.778756 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:13:37.781427 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m05:13:37.782068 [debug] [Dummy-1   ]: Connection 'list_am_ps_demo' was properly closed.
+[0m05:13:37.782563 [debug] [Dummy-1   ]: Connection 'model.marketing_leads_pilot.stg_marketing_leads' was properly closed.
+[0m05:13:37.783298 [info ] [Dummy-1   ]: 
+[0m05:13:37.783939 [info ] [Dummy-1   ]: Finished running 4 table models in 0 hours 0 minutes and 1.79 seconds (1.79s).
+[0m05:13:37.785253 [debug] [Dummy-1   ]: Command end result
+[0m05:13:37.825134 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m05:13:37.827906 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m05:13:37.836558 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m05:13:37.837220 [info ] [Dummy-1   ]: 
+[0m05:13:37.837876 [info ] [Dummy-1   ]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m05:13:37.838421 [info ] [Dummy-1   ]: 
+[0m05:13:37.839096 [error] [Dummy-1   ]:   Database Error in model stg_marketing_leads (models/staging/stg_marketing_leads.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 13 unexpected ';'.
+  compiled code at /tmp/dbt/target/run/marketing_leads_pilot/models/staging/stg_marketing_leads.sql
+[0m05:13:37.839598 [info ] [Dummy-1   ]: 
+[0m05:13:37.840128 [info ] [Dummy-1   ]: Done. PASS=0 WARN=0 ERROR=1 SKIP=3 TOTAL=4
+[0m05:13:37.842163 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.6617556, "process_in_blocks": "0", "process_kernel_time": 1.3, "process_mem_max_rss": "433796", "process_out_blocks": "0", "process_user_time": 5.48}
+[0m05:13:37.842926 [debug] [Dummy-1   ]: Command `cli run` failed at 05:13:37.842639 after 3.66 seconds
+[0m05:13:37.843522 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 05:15:04.864094 | 2d1b1ed2-499a-444a-93a9-c85c0b7940cf ==============================
+[0m05:15:04.864094 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m05:15:04.865436 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m05:15:05.257202 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m05:15:06.002747 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m05:15:06.243076 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m05:15:06.244075 [debug] [Dummy-1   ]: Partial parsing: updated file: marketing_leads_pilot://models/staging/stg_marketing_leads.sql
+[0m05:15:06.901794 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m05:15:06.904499 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m05:15:06.947851 [info ] [Dummy-1   ]: Found 4 models, 591 macros
+[0m05:15:06.950599 [info ] [Dummy-1   ]: 
+[0m05:15:06.951313 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m05:15:06.951849 [info ] [Dummy-1   ]: 
+[0m05:15:06.952807 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m05:15:06.960703 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_am_ps_demo_dbt_projects'
+[0m05:15:07.094237 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:15:07.095067 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m05:15:07.095607 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:15:07.694194 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.598 seconds
+[0m05:15:07.700406 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:15:07.701108 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+show objects in am_ps_demo.dbt_projects
+    limit 10000
+    
+;
+[0m05:15:07.776939 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.075 seconds
+[0m05:15:07.779592 [debug] [ThreadPool]: Using snowflake connection "list_am_ps_demo_dbt_projects"
+[0m05:15:07.780226 [debug] [ThreadPool]: On list_am_ps_demo_dbt_projects: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "marketing_leads_pilot", "target_name": "dev", "connection_name": "list_am_ps_demo_dbt_projects"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m05:15:07.859445 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.078 seconds
+[0m05:15:07.867154 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:15:07.868016 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_am_ps_demo_dbt_projects, now model.marketing_leads_pilot.stg_marketing_leads)
+[0m05:15:07.868697 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:15:07.881325 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.stg_marketing_leads"
+[0m05:15:07.882328 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:15:07.883455 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.stg_marketing_leads
+[0m05:15:07.884971 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:15:07.885921 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.marketing_leads_pilot.stg_marketing_leads, now model.marketing_leads_pilot.int_dim_lead_source)
+[0m05:15:07.886527 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:15:07.894192 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.int_dim_lead_source"
+[0m05:15:07.895192 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:15:07.896212 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.int_dim_lead_source
+[0m05:15:07.897394 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.int_fact_leads
+[0m05:15:07.898281 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.marketing_leads_pilot.int_dim_lead_source, now model.marketing_leads_pilot.int_fact_leads)
+[0m05:15:07.898857 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.int_fact_leads
+[0m05:15:07.905759 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.int_fact_leads"
+[0m05:15:07.906750 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.int_fact_leads
+[0m05:15:07.907770 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.int_fact_leads
+[0m05:15:07.909026 [debug] [Thread-2 (]: Began running node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:15:07.910024 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.marketing_leads_pilot.int_fact_leads, now model.marketing_leads_pilot.mkt_leads_bus)
+[0m05:15:07.910653 [debug] [Thread-2 (]: Began compiling node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:15:07.917287 [debug] [Thread-2 (]: Writing injected SQL for node "model.marketing_leads_pilot.mkt_leads_bus"
+[0m05:15:07.918272 [debug] [Thread-2 (]: Began executing node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:15:07.919321 [debug] [Thread-2 (]: Finished running node model.marketing_leads_pilot.mkt_leads_bus
+[0m05:15:07.921473 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m05:15:07.922012 [debug] [Dummy-1   ]: Connection 'model.marketing_leads_pilot.mkt_leads_bus' was properly closed.
+[0m05:15:07.923470 [debug] [Dummy-1   ]: Command end result
+[0m05:15:07.961938 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m05:15:07.964541 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m05:15:07.974250 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m05:15:07.976558 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 3.212238, "process_in_blocks": "0", "process_kernel_time": 1.22, "process_mem_max_rss": "481148", "process_out_blocks": "0", "process_user_time": 5.71}
+[0m05:15:07.977373 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 05:15:07.977077 after 3.21 seconds
+[0m05:15:07.977997 [debug] [Dummy-1   ]: Flushing usage events
